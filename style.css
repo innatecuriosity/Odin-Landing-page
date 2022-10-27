@@ -47,11 +47,45 @@ body {
     display: flex;
     flex-direction: column;
 }
+.slideshow {
+    display: flex;
+    list-style: none;
+    padding: none;
+    justify-content: center;
+    margin-block: 0;
 
+
+}
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 24px;
+    width: 120px;
+    flex: 0 0 auto;
+
 }
+
+.card img {
+    height: 120px;
+    width: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    border-color: rgb(42, 69,130);
+    border-width: 4px;
+}
+
+.img-description {
+    font-style: italic;
+    color: white;
+    background-color: rgba(42, 68, 130, 0.5);
+    margin: 4px;
+    text-align: center;
+    border-radius: 12px;
+    padding:4px;
+}
+
 .banner {
     display: flex;
 }
