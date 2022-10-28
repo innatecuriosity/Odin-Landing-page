@@ -1,9 +1,14 @@
+html, body {
+    min-height: 100vh;
+    margin: 0px;
+}
+
 body {
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
     border: 0;
-    margin: 0;
+    margin: 0px;
 }
 
 * {
@@ -12,7 +17,7 @@ body {
     border-style:solid
 }
 /**/
-.header, .footer, .banner {
+.header, .footer {
     background-color: rgb(42, 69,130);
 }
 
@@ -24,28 +29,49 @@ body {
 
 .top-links {
     display: flex;
+    flex: 0 0 auto;
+    height: 56px;
 }
 
-.top-links ul {
+.links {
     display: flex;
-
     list-style: none;
-    padding: none;
-    margin-block: none;
+    padding-inline-start: 0;
+    margin-block: 0;
+    justify-content: right;
+    flex: 1 1 auto;
+}
+
+.top-links li {
+    padding: 8px;
+    margin: 4px;
 }
 
 .intro {
     display: flex;
+    justify-content: center;
 }
 
 .title-card {
     display: flex;
     flex-direction: column;
+    width: 500px;
+    flex: 0 1 auto;
+    margin: 12px;
+}
+
+.intro img {
+    height: auto;
+    width: 300px;
+    border-radius: 8px;
+    flex: 0 1 auto;
+    margin: 12px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
+    flex: 1 1 auto;
 }
 .slideshow {
     display: flex;
@@ -53,8 +79,6 @@ body {
     padding: none;
     justify-content: center;
     margin-block: 0;
-
-
 }
 .card {
     display: flex;
@@ -88,10 +112,14 @@ body {
 
 .banner {
     display: flex;
+    height: 150px;
+    background-color: rgba(63, 104, 195, 0.5);
 }
 
 .bottom {
     display: flex;
+    flex: 1 1 0;
+    height: 100%;
 }
 
 .footer {
@@ -99,9 +127,14 @@ body {
     height: 32px;
     justify-content: center;
     align-items: center;
+
 }
+
 .footer>* {
     color: aquamarine;
+    flex: 0 0 auto;
+
+
 }
 .footer a {
     text-decoration: none;
