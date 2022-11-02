@@ -20,6 +20,7 @@ body {
 */
 .header, .footer {
     background-color: rgb(42, 69,130);
+
 }
 
 button, button a {
@@ -34,7 +35,7 @@ button, button a {
 }
 .header .logo {
     flex: 0 0 auto;
-    height: 56px;
+    height: 42px;
     width: auto;
     margin: 12px 24px;
 }
